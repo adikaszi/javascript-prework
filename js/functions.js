@@ -1,14 +1,14 @@
-function printMessage(msg){
-	let div = document.createElement('div');
+const printMessage = function(msg){
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
 
-function clearMessages(){
+const clearMessages = function(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-function displayResult(argComputerMove, argPlayerMove) {
+const displayResult = function(argComputerMove, argPlayerMove) {
     if ((argComputerMove == "kamień" && argPlayerMove === "papier") ||
     ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') ||
     ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień')){
